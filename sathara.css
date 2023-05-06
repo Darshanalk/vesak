@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    
+    justify-content: center;
+    overflow: hidden;
+    background: #000000;
+}
+p
+{
+    left: 50%;
+    top: 500px;
+    height: auto;
+    width: auto;
+    position: relative;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    font-size: 20px;
+    color: #ffffff;
+}
+.box ul li
+{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(deepskyblue,transparent,transparent);
+    bottom: 0;
+    left: 10;
+    animation: animate 15s linear infinite;
+}
+.box2 ul li
+{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(rgb(0, 255, 76),transparent,transparent);
+    bottom: 0;
+    left: 10;
+    animation: animate 15s linear infinite;
+}
+.box3 ul li
+{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(rgb(255, 251, 0),transparent,transparent);
+    bottom: 0;
+    left: 10;
+    animation: animate 15s linear infinite;
+}
+.box4 ul li
+{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(rgb(255, 0, 170),transparent,transparent);
+    bottom: 0;
+    left: 10;
+    animation: animate 15s linear infinite;
+}
+ul li:nth-child(2)
+{
+    left: 370px;
+    animation-delay: 2s;
+}
+ul li:nth-child(3)
+{
+    left: 250px;
+    animation-delay: 4s;
+}
+ul li:nth-child(4)
+{
+    left: 600px;
+    animation-delay: 10s;
+}
+ul li:nth-child(5)
+{
+    left: 750px;
+    animation-delay: 4s;
+}
+ul li:nth-child(6)
+{
+    left: 800px;
+    animation-delay: 9s;
+}
+ul li:nth-child(7)
+{
+    right:81px;
+    animation-delay: 15s;
+}
+ul li:nth-child(8)
+{
+    right:20px;
+    animation-delay: 8s;
+}
+ul li:nth-child(9)
+{
+    left: 200px;
+    animation-delay: 11s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 1;
+        bottom: 0;
+    }
+    100%
+    {
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100%;
+    }
+}
